@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @up.name %>
+</p>
+<hr>
+<strong>File:</strong>
+  <%= image_tag @up.file.url(:thumb) %>
+  <%= link_to "View", @up.file.url %>
+  <hr>
+
+
+<%= link_to 'Edit', edit_up_path(@up) %> |
+<%= link_to 'Back', ups_path %>
